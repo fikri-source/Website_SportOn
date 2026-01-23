@@ -32,31 +32,31 @@ const ProductActions = ({ product, stock }: TProductActionsProps) => {
   };
 
   return (
-    <div className="flex gap-5">
-      <div className="border border-gray-500 inline-flex w-fit min-w-20.5">
-        <div className="aspect-square text-xl font-medium border-r border-gray-500 flex justify-center items-center">
+    <div className="flex items-center gap-4 mt-8">
+      <div className="flex h-[48px] border border-gray-500 inline-flex w-fit">
+        <div className="w-12 aspect-square text-xl font-medium border-r border-gray-500 flex justify-center items-center">
           <span>{qty}</span>
         </div>
-        <div className="flex flex-col">
+        <div className="flex flex-col w-8">
           <button
-            className="border-b border-gray-500 cursor-pointer h-1/2 aspect-square flex items-center justify-center"
+            className="flex-1 flex items-center cursor-pointer h-1/2 aspect-square flex items-center justify-center"
             onClick={() => setQty(qty < stock ? qty + 1 : qty)}
           >
             <FiChevronUp />
           </button>
           <button
-            className="cursor-pointer h-1/2 aspect-square flex items-center justify-center"
+            className="flex-1 flex items-center cursor-pointer h-1/2 aspect-square flex items-center justify-center"
             onClick={() => setQty(qty > 1 ? qty - 1 : qty)}
           >
             <FiChevronDown />
           </button>
         </div>
       </div>
-      <Button className="px-20 w-full" onClick={handleAddToCart}>
+      <Button className="h-[50px] px-8 flex items-center gap-2" onClick={handleAddToCart}>
         <FiShoppingBag size={24} />
         Add to Cart
       </Button>
-      <Button variant="dark" className="px-20 w-full" onClick={handleCheckout}>
+      <Button variant="dark" className="h-[50px] px-8 flex items-center gap-2" onClick={handleCheckout}>
         Checkout Now
         <FiArrowRight size={24} />
       </Button>

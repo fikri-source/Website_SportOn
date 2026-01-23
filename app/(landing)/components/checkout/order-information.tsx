@@ -19,8 +19,8 @@ const OrderInformation = ({ formData, setFormData }: TOrderInformation) => {
   return (
     <CardWithHeader title="Order Information">
       <div className="p-5 space-y-5">
-        <div className="input-group flex flex-col space-y-1">
-          <label htmlFor="customerName">Full Name</label>
+        <div className="input-group bg-gray-100 rounded-md flex flex-col space-y-1">
+          <label htmlFor="customerName">Full Name:</label>
           <input
             type="text"
             placeholder="Type your full name"
@@ -30,8 +30,8 @@ const OrderInformation = ({ formData, setFormData }: TOrderInformation) => {
             onChange={handleInputChange}
           />
         </div>
-        <div className="input-group flex flex-col space-y-1">
-          <label htmlFor="customerContact">Whatsapp Number</label>
+        <div className="input-group bg-gray-100 rounded-md flex flex-col space-y-1">
+          <label htmlFor="customerContact">Whatsapp Number:</label>
           <input
             type="number"
             placeholder="Type your whatsapp number"
@@ -41,8 +41,8 @@ const OrderInformation = ({ formData, setFormData }: TOrderInformation) => {
             onChange={handleInputChange}
           />
         </div>
-        <div className="input-group flex flex-col space-y-1">
-          <label htmlFor="customerAddress">Shipping Address</label>
+        <div className="input-group bg-gray-100 rounded-md flex flex-col space-y-1">
+          <label htmlFor="customerAddress">Shipping Address:</label>
           <textarea
             placeholder="Type your shipping address"
             id="customerAddress"

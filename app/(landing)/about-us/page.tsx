@@ -1,6 +1,6 @@
 const AboutUs = () => {
   return (
-    <main>
+    <main className="pt-20">
       <h1 className="text-4xl font-bold text-primary">Halo ini About Us</h1>
     </main>
   );
