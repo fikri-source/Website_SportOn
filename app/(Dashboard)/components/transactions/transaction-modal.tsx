@@ -16,17 +16,18 @@ const TransactionModal = ({ isOpen, onClose }: TTransactionModalProps) => {
     <Modal isOpen={isOpen} onClose={onClose} title="Verify Transactions">
       <div className="flex gap-6">
         <div>
-          <h4 className="font-semibold text-sm mb-2">Payment Proof</h4>
+          <h4 className="font-semibold text-sm mb-2 mx-2">Payment Proof</h4>
           <Image
             src="/images/payment-proof-dummy.png"
             alt="payment proof"
             width={200}
             height={401}
+            className="mx-2"
           />
         </div>
         <div>
-          <h4 className="font-semibold text-sm mb-2">Order Details</h4>
-          <div className="bg-gray-100 rounded-md flex flex-col gap-2.5 p-4  text-sm mb-5">
+          <h4 className="font-semibold text-sm mb-2 mx-3">Order Details</h4>
+          <div className="bg-gray-100 rounded-md flex flex-col gap-2.5 p-4  text-sm mb-5 mx-3">
             <div className="flex justify-between font-medium">
               <div className="opacity-50">Date</div>
               <div className="text-right">23/02/2026 19:32</div>
@@ -49,8 +50,8 @@ const TransactionModal = ({ isOpen, onClose }: TTransactionModalProps) => {
             </div>
           </div>
 
-          <h4 className="font-semibold text-sm mb-2">Items Purchased</h4>
-          <div className="border border-gray-200 rounded-lg p-2 flex items-center gap-2">
+          <h4 className="font-semibold text-sm mb-2 mx-3">Items Purchased</h4>
+          <div className="border border-gray-200 rounded-lg p-2 flex items-center gap-2 mx-3">
             <div className="bg-gray-100 rounded aspect-square w-8 h-8">
               <Image
                 src="/images/products/product-1.png"
@@ -63,21 +64,21 @@ const TransactionModal = ({ isOpen, onClose }: TTransactionModalProps) => {
             <div className="font-medium ml-auto text-sm">3 units</div>
           </div>
           <div className="flex justify-between  text-sm mt-6">
-            <h4 className="font-semibold">Total </h4>
-            <div className="text-primary font-semibold">
+            <h4 className="font-semibold mx-3">Total </h4>
+            <div className="text-primary font-semibold mx-3">
               {priceFormatter(450000)}
             </div>
           </div>
           <div className=" flex justify-end gap-5 mt-12">
             <Button
-              className="text-primary! bg-primary-light! rounded-md"
+              className="text-primary! bg-primary-light! rounded-md mb-1"
               size="small"
             >
               <FiX size={20} />
               Reject
             </Button>
             <Button
-              className="text-white! bg-[#50C252]! rounded-md"
+              className="text-white! bg-[#50C252]! rounded-md mx-1 mb-1"
               size="small"
             >
               <FiCheck size={20} />

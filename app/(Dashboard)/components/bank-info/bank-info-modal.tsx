@@ -13,7 +13,7 @@ const BankInfoModal = ({ isOpen, onClose }: TBankInfoModalProps) => {
     <Modal isOpen={isOpen} onClose={onClose} title="Add New Bank Account">
       <div className="flex flex-col gap-6">
         <div className="flex flex-col gap-4 w-full">
-          <div className="input-group-admin">
+          <div className="input-group-admin mx-3 mt-2">
             <label htmlFor="bankName">Bank Name</label>
             <input
               type="text"
@@ -22,7 +22,7 @@ const BankInfoModal = ({ isOpen, onClose }: TBankInfoModalProps) => {
               placeholder="e. g. Mandiri, BCA, BRI"
             />
           </div>
-          <div className="input-group-admin">
+          <div className="input-group-admin mx-3">
             <label htmlFor="accountNumber">Account Number</label>
             <input
               type="text"
@@ -31,7 +31,7 @@ const BankInfoModal = ({ isOpen, onClose }: TBankInfoModalProps) => {
               placeholder="123124344234234"
             />
           </div>
-          <div className="input-group-admin">
+          <div className="input-group-admin mx-3">
             <label htmlFor="accountName">Account Name / Holder</label>
             <input
               type="text"
@@ -41,7 +41,7 @@ const BankInfoModal = ({ isOpen, onClose }: TBankInfoModalProps) => {
             />
           </div>
         </div>
-        <Button className="ml-auto mt-3 rounded-lg">Create Bank Account</Button>
+        <Button className="ml-auto mt-3 rounded-lg mx-1 mb-1">Create Bank Account</Button>
       </div>
     </Modal>
   );

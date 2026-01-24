@@ -16,7 +16,7 @@ const CategoryModal = ({ isOpen, onClose }: TCategoryModalProps) => {
     <Modal isOpen={isOpen} onClose={onClose} title="Add New Category">
       <div className="flex flex-col gap-6">
         <div className="flex gap-7">
-          <div className="min-w-50">
+          <div className="min-w-50 mt-2 mx-2">
             <ImageUploadPreview
               label="Category Image"
               value={imagePreview}
@@ -27,7 +27,7 @@ const CategoryModal = ({ isOpen, onClose }: TCategoryModalProps) => {
             />
           </div>
           <div className="flex flex-col gap-4 w-full">
-            <div className="input-group-admin">
+            <div className="input-group-admin mx-3 mt-2">
               <label htmlFor="categoryName">Category Name</label>
               <input
                 type="text"
@@ -37,7 +37,7 @@ const CategoryModal = ({ isOpen, onClose }: TCategoryModalProps) => {
               />
             </div>
 
-            <div className="input-group-admin">
+            <div className="input-group-admin mx-3">
               <label htmlFor="description">Description</label>
               <textarea
                 name="description"
@@ -48,7 +48,7 @@ const CategoryModal = ({ isOpen, onClose }: TCategoryModalProps) => {
             </div>
           </div>
         </div>
-        <Button className="ml-auto mt-3 rounded-lg">Create Category</Button>
+        <Button className="ml-auto mt-3 rounded-lg mx-1 mb-1">Create Category</Button>
       </div>
     </Modal>
   );

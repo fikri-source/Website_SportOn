@@ -16,7 +16,7 @@ const ProductModal = ({ isOpen, onClose }: TProductModalProps) => {
     <Modal isOpen={isOpen} onClose={onClose} title="Add New Product">
       <div className="flex flex-col gap-6">
         <div className="flex gap-7">
-          <div className="min-w-50">
+          <div className="min-w-50 ml-3 mt-3">
             <ImageUploadPreview
               label="Product Image"
               value={imagePreview}
@@ -27,7 +27,7 @@ const ProductModal = ({ isOpen, onClose }: TProductModalProps) => {
             />
           </div>
           <div className="flex flex-col gap-4 w-full">
-            <div className="input-group-admin">
+            <div className="input-group-admin mr-2">
               <label htmlFor="productName">Product Name</label>
               <input
                 type="text"
@@ -37,7 +37,7 @@ const ProductModal = ({ isOpen, onClose }: TProductModalProps) => {
               />
             </div>
             <div className="grid grid-cols-2 gap-4">
-              <div className="input-group-admin">
+              <div className="input-group-admin mr-2">
                 <label htmlFor="productPrice">Price (IDR)</label>
                 <input
                   type="number"
@@ -46,7 +46,7 @@ const ProductModal = ({ isOpen, onClose }: TProductModalProps) => {
                   placeholder="e. g. 500000"
                 />
               </div>
-              <div className="input-group-admin">
+              <div className="input-group-admin mr-2">
                 <label htmlFor="stock">Stock</label>
                 <input
                   type="number"
@@ -56,7 +56,7 @@ const ProductModal = ({ isOpen, onClose }: TProductModalProps) => {
                 />
               </div>
             </div>
-            <div className="input-group-admin">
+            <div className="input-group-admin mr-2">
               <label htmlFor="category">Category</label>
               <select name="category" id="category">
                 <option value="" disabled>
@@ -68,7 +68,7 @@ const ProductModal = ({ isOpen, onClose }: TProductModalProps) => {
             </div>
           </div>
         </div>
-        <div className="input-group-admin">
+        <div className="input-group-admin mx-3">
           <label htmlFor="description">Description</label>
           <textarea
             name="description"
@@ -77,7 +77,7 @@ const ProductModal = ({ isOpen, onClose }: TProductModalProps) => {
             placeholder="Product Details..."
           ></textarea>
         </div>
-        <Button className="ml-auto mt-3 rounded-lg">Create Product</Button>
+        <Button className="ml-auto mt-3 rounded-lg mx-1 mb-1">Create Product</Button>
       </div>
     </Modal>
   );

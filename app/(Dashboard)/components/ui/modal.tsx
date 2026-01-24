@@ -11,7 +11,7 @@ const Modal = ({ isOpen, onClose, title, children }: TModalProps) => {
     if (!isOpen) return null;
 
     return (
-        <div className="fixed inset-0 z-50 flex items-center justify-between p-4">
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
             <div 
                 className="absolute bg-black/50 backdrop-blur-sm transition-opacity w-full h-full" 
                 onClick={onClose}
@@ -21,7 +21,7 @@ const Modal = ({ isOpen, onClose, title, children }: TModalProps) => {
                     <h3 className="font-semibold text-lg">{title}</h3>
                     <button 
                         onClick={onClose} 
-                        className="p-4 rounded-full hover:bg-gray-100 cursor-pointer"
+                        className="p-2 rounded-full hover:bg-gray-100 cursor-pointer"
                     >
                         <FiX size={24} />
                     </button>
